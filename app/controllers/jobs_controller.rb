@@ -3,7 +3,7 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.most_recent.all
+    @jobs = Job.most_recent.includes(:company).all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -12,7 +12,7 @@ class JobsController < ApplicationController
   end
 
   def premium
-    @jobs = Job.where(premium: true).most_recent.
+    @jobs = Job.where(premium: true).includes(:company).most_recent.
       paginate(page: params[:page], per_page: 10)
   end
 

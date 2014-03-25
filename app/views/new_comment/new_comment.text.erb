@@ -1,0 +1,7 @@
+Hello <%= @company.name %>
+
+You have a new coment about <%= @job.title %> job:
+name: <%= @comment.name %>
+body: <%= @comment.body %>
+
+You can see all comment of this job here: <%= job_url(@job) %>

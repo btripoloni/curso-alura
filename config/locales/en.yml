@@ -1,5 +1,35 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+    helper:
+        submit:
+            comment:
+                create: "Send"
+                
+    company_mailer:
+        new_comment:
+            subject: "New comment recived!"
+    
+    menu:
+        premiun_jobs: "Premium jobs"
+        all_jobs: "All jobs"
+        new_job: "New job"
+        logout: "Logout"
+        new: "New Company"
+        login: "Login"
+    
+    job:
+        index:
+            listing: "Listing Jobs"
+        show:
+            new_comment: "Send a new comment"
+            comments: "Comments"
+            
+    comments:
+        count: "comment"
+        comment:
+            said: "%{name} said:"
+            send: "Send %{timestamp} ago:"
+    link:
+        edit: "Edit"
+        back: "Back"
+        destroy: "Destroy"
+        destroy_confimation: "You are sure?"

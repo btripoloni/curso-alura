@@ -1,0 +1,43 @@
+pt-BR:
+    activerecorn:
+        models:
+            comment: "Comentário"
+        attributes:
+            comment:
+                nome: "Nome"
+                body: "Mensagem"
+                
+    helper:
+        submit:
+            comment:
+                create: "Enviar"
+    
+    company_mailer:
+        new_comment:
+            subject: "Novo Commentario recebido!"
+    
+    menu:
+        premiun_jobs: "Vagas Populares"
+        all_jobs: "Todas as vagas"
+        new_job: "Nova vaga"
+        logout: "Sair"
+        new: "Nova Empresa"
+        login: "Logar"
+    
+    job:
+        index:
+            listing: "Vagas disponiveis"
+        show:
+            new_comment: "Enviar um novo comentario"
+            comments: "Comentarios"
+            
+    comments:
+        count: "comentario"
+        comment:
+            said: "%{name} disse:"
+            send: "enviado %{timestamp} atrás:"
+    link:
+        edit: "Editar"
+        back: "Voltar"
+        destroy: "Deletar"
+        destroy_confirmation: "Você tem serteza?"

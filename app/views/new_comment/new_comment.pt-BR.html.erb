@@ -1,0 +1,9 @@
+<p>Olá <%= @company.name %></p>
+
+<p>Você tem um novo comentario sobre a vaga <%= @job.title %>:</p>
+<p>
+    <em>Nome: <%= @comment.name %></em>
+    <em>Mensagem: <%= @comment.body %></em>
+</p>
+
+<p>Você pode ver todos os commentarios sobre essa vaga <%= link_to 'aqui.', job_url(@job) %></p>
