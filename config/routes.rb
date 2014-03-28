@@ -4,7 +4,7 @@ JobBoard::Application.routes.draw do
   get "companies/login", to: "login#new"
   post "companies/login", to: "login#create"
   get "companies/logout", to: 'login#destroy'
-  resources :companies, only: [:new, :create]
+  resources :companies, only: [:new, :create, :show]
 
   resources :jobs do
     post "comments", to: "comments#create"

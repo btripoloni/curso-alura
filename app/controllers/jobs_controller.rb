@@ -3,11 +3,23 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.most_recent.includes(:company).all
-
+    @id_minimo = params[:id_minimo]
+    id @id_minimo
+      lista_parcial = Job.where("id > ?", @id_minimo)
+    else
+      lista_parcial = Job
+    end
+    @job = lista_parcial.most_recent.includes(:company).all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @jobs }
+      format.atom {
+        if Job.first
+          @last_updated = Job.first.updated_at
+        else
+          @last_updated = Time.now
+        end
+        }
     end
   end
 
@@ -19,7 +31,7 @@ class JobsController < ApplicationController
   # GET /jobs/1
   # GET /jobs/1.json
   def show
-    @job = Job.find(params[:id])
+    @job = Job.find_by_slug(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

@@ -11937,3 +11937,2235 @@ DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rail
   Rendered comments/_comment.html.erb (2.7ms)
   Rendered comments/create.js.erb (4.3ms)
 Completed 200 OK in 459ms (Views: 8.9ms | ActiveRecord: 51.3ms)
+
+
+Started GET "/" for 172.17.42.1 at 2014-03-26 00:17:05 +0000
+Connecting to database specified by database.yml
+Processing by JobsController#premium as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."premium" = 't' ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (4)
+  Rendered jobs/_job.html.erb (25.1ms)
+  Rendered jobs/premium.html.erb within layouts/application (98.0ms)
+Compiled application.js  (0ms)  (pid 1035)
+Completed 200 OK in 172ms (Views: 166.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 00:17:06 +0000
+Served asset /bootstrap.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 00:17:06 +0000
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 00:17:06 +0000
+Served asset /hello.css - 200 OK (1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 00:17:07 +0000
+Served asset /jobs.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 00:17:12 +0000
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/" for 172.17.42.1 at 2014-03-26 00:22:50 +0000
+Processing by JobsController#premium as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."premium" = 't' ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (4)
+  Rendered jobs/_job.html.erb (5.3ms)
+  Rendered jobs/premium.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 00:22:50 +0000
+Served asset /bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 00:22:50 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 00:22:51 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 00:22:52 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 00:22:53 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/3-need%20a%20developer" for 172.17.42.1 at 2014-03-26 00:22:55 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developer"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "3-need a developer"]]
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = 4 LIMIT 1
+  Rendered comments/_form.html.erb (47.4ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."job_id" = 3[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+  Rendered comments/_comment.html.erb (11.2ms)
+  Rendered jobs/show.html.erb within layouts/application (73.3ms)
+Completed 200 OK in 84ms (Views: 81.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 00:22:55 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 00:22:55 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 00:22:55 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 00:22:55 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 00:22:56 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/3-need%20a%20developer" for 172.17.42.1 at 2014-03-26 00:52:13 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developer"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "3-need a developer"]]
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = 4 LIMIT 1[0m
+  Rendered comments/_form.html.erb (10.1ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."job_id" = 3
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+  Rendered comments/_comment.html.erb (9.5ms)
+  Rendered jobs/show.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 92ms (Views: 48.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:13 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:13 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:14 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:14 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 00:52:14 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/3-need%20a%20developerasda" for 172.17.42.1 at 2014-03-26 00:52:17 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developerasda"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "3-need a developerasda"]]
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = 4 LIMIT 1
+  Rendered comments/_form.html.erb (31.7ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."job_id" = 3[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+  Rendered comments/_comment.html.erb (9.1ms)
+  Rendered jobs/show.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:18 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:18 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:18 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:18 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 00:52:18 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/3-opa%20aiae" for 172.17.42.1 at 2014-03-26 00:52:31 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-opa aiae"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "3-opa aiae"]]
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = 4 LIMIT 1[0m
+  Rendered comments/_form.html.erb (2.3ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."job_id" = 3
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+  Rendered comments/_comment.html.erb (9.3ms)
+  Rendered jobs/show.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:31 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:31 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:31 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 00:52:31 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 00:52:32 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/3-opa%20aiae" for 172.17.42.1 at 2014-03-26 00:53:02 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-opa aiae"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `find_by_slug' for #<Class:0x007ff044e90c50>):
+  app/controllers/jobs_controller.rb:22:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/jobs/3-need%20a%20developerss" for 172.17.42.1 at 2014-03-26 00:53:14 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developerss"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_slug' for #<Class:0x007ff044e90c50>):
+  app/controllers/jobs_controller.rb:22:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/jobs/3-need%20a%20developer" for 172.17.42.1 at 2014-03-26 00:53:23 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developer"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_slug' for #<Class:0x007ff044e90c50>):
+  app/controllers/jobs_controller.rb:22:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/jobs/3-need%20a%20developer" for 172.17.42.1 at 2014-03-26 00:54:09 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developer"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "3-need a developer"]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = 4 LIMIT 1
+  Rendered comments/_form.html.erb (9.5ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."job_id" = 3[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+  Rendered comments/_comment.html.erb (10.3ms)
+  Rendered jobs/show.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 56ms (Views: 45.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 00:54:09 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 00:54:09 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 00:54:09 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 00:54:10 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 00:54:10 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/3-need%20a%20developerdd" for 172.17.42.1 at 2014-03-26 00:54:14 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developerdd"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "3-need a developerdd"]]
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  app/models/job.rb:16:in `find_by_slug'
+  app/controllers/jobs_controller.rb:22:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/" for 172.17.42.1 at 2014-03-26 01:05:39 +0000
+Processing by JobsController#premium as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."premium" = 't' ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (4)
+  Rendered jobs/_job.html.erb (1.7ms)
+  Rendered jobs/premium.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 01:05:40 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 01:05:40 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 01:05:40 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 01:05:40 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 01:05:41 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/3-need%20a%20developer" for 172.17.42.1 at 2014-03-26 01:05:45 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developer"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "3-need a developer"]]
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = 4 LIMIT 1
+  Rendered comments/_form.html.erb (2.3ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."job_id" = 3[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__3134371309781245430_70334949668920 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+  Rendered comments/_comment.html.erb (9.3ms)
+  Rendered jobs/show.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 01:05:45 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 01:05:45 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 01:05:45 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 01:05:45 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 01:05:46 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/3" for 172.17.42.1 at 2014-03-26 01:05:48 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  app/models/job.rb:16:in `find_by_slug'
+  app/controllers/jobs_controller.rb:22:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/jobs/%27" for 172.17.42.1 at 2014-03-26 01:06:01 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"'"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "'"]]
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Job with id='):
+  app/models/job.rb:12:in `find_by_slug'
+  app/controllers/jobs_controller.rb:22:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.7ms)
+
+
+Started GET "/jobs/%27" for 172.17.42.1 at 2014-03-26 01:28:54 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"'"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "'"]]
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Job with id='):
+  app/models/job.rb:12:in `find_by_slug'
+  app/controllers/jobs_controller.rb:22:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/" for 172.17.42.1 at 2014-03-26 01:30:10 +0000
+Connecting to database specified by database.yml
+Processing by JobsController#premium as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."premium" = 't' ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (4)
+  Rendered jobs/_job.html.erb (25.0ms)
+  Rendered jobs/premium.html.erb within layouts/application (97.0ms)
+Completed 200 OK in 168ms (Views: 162.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 172.17.42.1 at 2014-03-26 01:30:11 +0000
+Processing by JobsController#premium as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."premium" = 't' ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (4)
+  Rendered jobs/_job.html.erb (1.2ms)
+  Rendered jobs/premium.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 01:30:11 +0000
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 01:30:11 +0000
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 01:30:11 +0000
+Served asset /hello.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 01:30:11 +0000
+Served asset /jobs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 01:30:12 +0000
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/jobs/3-need%20a%20developer" for 172.17.42.1 at 2014-03-26 01:30:16 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developer"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "3-need a developer"]]
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = 4 LIMIT 1
+  Rendered comments/_form.html.erb (11.3ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."job_id" = 3[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+  Rendered comments/_comment.html.erb (9.9ms)
+  Rendered jobs/show.html.erb within layouts/application (62.7ms)
+Completed 200 OK in 73ms (Views: 70.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 01:30:16 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 01:30:16 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 01:30:16 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 01:30:16 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 01:30:17 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/3" for 172.17.42.1 at 2014-03-26 01:30:20 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant StandadError):
+  lib/exeptions/slug_error.rb:1:in `<top (required)>'
+  app/models/job.rb:16:in `find_by_slug'
+  app/controllers/jobs_controller.rb:22:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.9ms)
+
+
+Started GET "/jobs/3" for 172.17.42.1 at 2014-03-26 01:30:47 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 11ms
+
+SlugError (SlugError):
+  app/models/job.rb:16:in `find_by_slug'
+  app/controllers/jobs_controller.rb:22:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/jobs/3-need%20a%20developer" for 172.17.42.1 at 2014-03-26 01:42:19 +0000
+
+ActionController::RoutingError (undefined method `rescue_form' for ApplicationController:Class):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/jobs_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs/3-need%20a%20developer" for 172.17.42.1 at 2014-03-26 01:42:51 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developer"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "3-need a developer"]]
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = 4 LIMIT 1[0m
+  Rendered comments/_form.html.erb (12.1ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."job_id" = 3
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+  Rendered comments/_comment.html.erb (13.3ms)
+  Rendered jobs/show.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 101ms (Views: 57.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 01:42:52 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 01:42:52 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 01:42:52 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 01:42:52 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 01:42:53 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/3-need%20a%20developerl" for 172.17.42.1 at 2014-03-26 01:42:57 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developerl"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "3-need a developerl"]]
+Redirected to http://agnate-pepper.codio.io:3000/jobs/3-need%20a%20developer
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/jobs/3-need%20a%20developer" for 172.17.42.1 at 2014-03-26 01:42:57 +0000
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3-need a developer"}
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "3-need a developer"]]
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = 4 LIMIT 1[0m
+  Rendered comments/_form.html.erb (2.2ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."job_id" = 3
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.0. Use ':data => { :confirm => 'Text' }' instead. (called from _app_views_comments__comment_html_erb__1426324747250126728_70130890470220 at /home/codio/workspace/app/views/comments/_comment.html.erb:4)
+  Rendered comments/_comment.html.erb (8.9ms)
+  Rendered jobs/show.html.erb within layouts/application (46.7ms)
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 01:42:58 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 01:42:58 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 01:42:58 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 01:42:58 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 01:42:58 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/companies/1" for 172.17.42.1 at 2014-03-26 02:37:44 +0000
+
+SyntaxError (/home/codio/workspace/app/controllers/companies_controller.rb:18: syntax error, unexpected '\n', expecting =>):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__4416083011526718954__call__3643025469805444502__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/companies/2" for 172.17.42.1 at 2014-03-26 02:38:17 +0000
+
+SyntaxError (/home/codio/workspace/app/controllers/companies_controller.rb:18: syntax error, unexpected '\n', expecting =>):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__4416083011526718954__call__3643025469805444502__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/companies/3" for 172.17.42.1 at 2014-03-26 02:38:22 +0000
+
+SyntaxError (/home/codio/workspace/app/controllers/companies_controller.rb:18: syntax error, unexpected '\n', expecting =>):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__4416083011526718954__call__3643025469805444502__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/companies/4" for 172.17.42.1 at 2014-03-26 02:38:26 +0000
+
+SyntaxError (/home/codio/workspace/app/controllers/companies_controller.rb:18: syntax error, unexpected '\n', expecting =>):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__4416083011526718954__call__3643025469805444502__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started GET "/companies/5" for 172.17.42.1 at 2014-03-26 02:38:30 +0000
+
+SyntaxError (/home/codio/workspace/app/controllers/companies_controller.rb:18: syntax error, unexpected '\n', expecting =>):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__4416083011526718954__call__3643025469805444502__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/companies/6" for 172.17.42.1 at 2014-03-26 02:38:35 +0000
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/monitor.rb:211)
+
+SyntaxError (/home/codio/workspace/app/controllers/companies_controller.rb:18: syntax error, unexpected '\n', expecting =>):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__4416083011526718954__call__3643025469805444502__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/companies/6" for 172.17.42.1 at 2014-03-26 02:39:10 +0000
+
+SyntaxError (/home/codio/workspace/app/controllers/companies_controller.rb:18: syntax error, unexpected '\n', expecting =>):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__4416083011526718954__call__3643025469805444502__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (29.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.3ms)
+
+
+Started GET "/companies/6" for 172.17.42.1 at 2014-03-26 02:39:59 +0000
+
+SyntaxError (/home/codio/workspace/app/controllers/companies_controller.rb:18: syntax error, unexpected '\n', expecting =>):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__4416083011526718954__call__3643025469805444502__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started GET "/companies/1" for 172.17.42.1 at 2014-03-26 02:40:06 +0000
+
+SyntaxError (/home/codio/workspace/app/controllers/companies_controller.rb:18: syntax error, unexpected '\n', expecting =>):
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.6) lib/active_support/inflector/methods.rb:228:in `constantize'
+  activesupport (3.2.6) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__4416083011526718954__call__3643025469805444502__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/companies/1" for 172.17.42.1 at 2014-03-26 02:40:32 +0000
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Company with id=1):
+  app/controllers/companies_controller.rb:17:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started GET "/companies/2" for 172.17.42.1 at 2014-03-26 02:40:58 +0000
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "2"]]
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Company with id=2):
+  app/controllers/companies_controller.rb:17:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started GET "/companies/3" for 172.17.42.1 at 2014-03-26 02:41:08 +0000
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Company with id=3):
+  app/controllers/companies_controller.rb:17:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started GET "/companies/4" for 172.17.42.1 at 2014-03-26 02:41:14 +0000
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "4"]]
+Completed 500 Internal Server Error in 40ms
+
+NoMethodError (undefined method `job' for #<Company:0x007f912454de88>):
+  app/controllers/companies_controller.rb:18:in `show'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/companies/4" for 172.17.42.1 at 2014-03-26 02:41:36 +0000
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."company_id" = 4
+Completed 200 OK in 25ms (Views: 15.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 172.17.42.1 at 2014-03-26 14:16:59 +0000
+Connecting to database specified by database.yml
+Processing by JobsController#premium as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."premium" = 't' ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (4)
+  Rendered jobs/_job.html.erb (26.7ms)
+  Rendered jobs/premium.html.erb within layouts/application (98.3ms)
+Completed 200 OK in 169ms (Views: 162.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 14:17:00 +0000
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 14:17:00 +0000
+Served asset /hello.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 14:17:00 +0000
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 14:17:01 +0000
+Served asset /jobs.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 14:17:01 +0000
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/?format=json" for 172.17.42.1 at 2014-03-26 14:17:38 +0000
+Processing by JobsController#premium as JSON
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template jobs/premium, application/premium with {:locale=>[:"pt-BR"], :formats=>[:json], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/home/codio/workspace/app/views"
+):
+  actionpack (3.2.6) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.6) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.6) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.6) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.6) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.6) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.6) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.6) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.6) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.6) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:425:in `_run__3832456378023845282__process_action__1359459490409116510__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__1155802858681288086__call__1103276651012436347__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (34.2ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 14:17:48 +0000
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+  Rendered jobs/_job.html.erb (2.3ms)
+  Rendered jobs/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 14:17:48 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 14:17:48 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 14:17:48 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 14:17:48 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 14:17:48 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs?format=json" for 172.17.42.1 at 2014-03-26 14:17:55 +0000
+Processing by JobsController#index as JSON
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/jobs?format=atom" for 172.17.42.1 at 2014-03-26 14:17:59 +0000
+Processing by JobsController#index as ATOM
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" LIMIT 1
+  Rendered jobs/index.atom.builder (15.7ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 14:20:54 +0000
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+ERROR: compiling _app_views_jobs_index_html_erb__3141824241211210250_70003274431260 RAISED /home/codio/workspace/app/views/jobs/index.html.erb:1: syntax error, unexpected ','
+... auto_discovery_link_tag atom:, jobs_url);@output_buffer.saf...
+...                               ^
+Function body:           def _app_views_jobs_index_html_erb__3141824241211210250_70003274431260(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "jobs/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append= ( auto_discovery_link_tag atom:, jobs_url);@output_buffer.safe_concat('
+');@output_buffer.safe_concat('<h1>');@output_buffer.append= ( t ".listing" );@output_buffer.safe_concat('</h1>
+
+');@output_buffer.append= ( render @jobs );@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/template.rb:297:in `module_eval'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/template.rb:297:in `compile'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/template.rb:244:in `block in compile!'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/template.rb:232:in `synchronize'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/template.rb:232:in `compile!'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/template.rb:144:in `block in render'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/notifications.rb:125:in `instrument'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/template.rb:143:in `render'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/notifications.rb:123:in `instrument'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/abstract_controller/rendering.rb:88:in `render'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-3.2.6/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/codio/workspace/app/controllers/jobs_controller.rb:8:in `index'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/abstract_controller/base.rb:167:in `process_action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:425:in `_run__3832456378023845282__process_action__4323994385036287998__callbacks'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/notifications.rb:123:in `instrument'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-3.2.6/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/abstract_controller/base.rb:121:in `process'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/abstract_controller/rendering.rb:45:in `process'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal.rb:203:in `dispatch'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_controller/metal.rb:246:in `block in action'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-3.2.6/lib/active_record/query_cache.rb:64:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activerecord-3.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:405:in `_run__1155802858681288086__call__1103276651012436347__callbacks'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-3.2.6/lib/rails/rack/logger.rb:26:in `call_app'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-3.2.6/lib/rails/rack/logger.rb:16:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/activesupport-3.2.6/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-3.2.6/lib/rails/engine.rb:479:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-3.2.6/lib/rails/application.rb:220:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-3.2.6/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered jobs/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/home/codio/workspace/app/views/jobs/index.html.erb:1: syntax error, unexpected ','
+... auto_discovery_link_tag atom:, jobs_url);@output_buffer.saf...
+...                               ^):
+    1: <%= auto_discovery_link_tag atom:, jobs_url%>
+    2: <h1><%= t ".listing" %></h1>
+    3: 
+    4: <%= render @jobs %>
+  app/controllers/jobs_controller.rb:8:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.4ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 14:21:36 +0000
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+  Rendered jobs/_job.html.erb (7.4ms)
+  Rendered jobs/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 14:21:36 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 14:21:37 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 14:21:37 +0000
+Served asset /hello.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 14:21:37 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 14:21:38 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs?format=jsom" for 172.17.42.1 at 2014-03-26 14:24:45 +0000
+Processing by JobsController#index as 
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/jobs?format=json" for 172.17.42.1 at 2014-03-26 14:24:49 +0000
+Processing by JobsController#index as JSON
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/jobs.atom" for 172.17.42.1 at 2014-03-26 14:30:55 +0000
+Processing by JobsController#index as ATOM
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "jobs".* FROM "jobs" LIMIT 1
+  Rendered jobs/index.atom.builder (7.0ms)
+Completed 200 OK in 17ms (Views: 8.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 15:28:22 +0000
+Connecting to database specified by database.yml
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id => #{@id_minimo}) ORDER BY created_at DESC[0m
+SQLite3::SQLException: near ">": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id => #{@id_minimo}) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 5ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ">": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id => #{@id_minimo}) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 15:28:55 +0000
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id >= #{@id_minimo}) ORDER BY created_at DESC
+SQLite3::SQLException: unrecognized token: "#": SELECT "jobs".* FROM "jobs"  WHERE (id >= #{@id_minimo}) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: unrecognized token: "#": SELECT "jobs".* FROM "jobs"  WHERE (id >= #{@id_minimo}) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 15:29:13 +0000
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > #{@id_minimo}) ORDER BY created_at DESC[0m
+SQLite3::SQLException: unrecognized token: "#": SELECT "jobs".* FROM "jobs"  WHERE (id > #{@id_minimo}) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: unrecognized token: "#": SELECT "jobs".* FROM "jobs"  WHERE (id > #{@id_minimo}) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 15:29:17 +0000
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id > #{@id_minimo}) ORDER BY created_at DESC
+SQLite3::SQLException: unrecognized token: "#": SELECT "jobs".* FROM "jobs"  WHERE (id > #{@id_minimo}) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: unrecognized token: "#": SELECT "jobs".* FROM "jobs"  WHERE (id > #{@id_minimo}) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.4ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 15:29:40 +0000
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > ) ORDER BY created_at DESC[0m
+SQLite3::SQLException: near ")": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id > ) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ")": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id > ) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 15:30:07 +0000
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id > ) ORDER BY created_at DESC
+SQLite3::SQLException: near ")": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id > ) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ")": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id > ) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.7ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 15:30:56 +0000
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > ) ORDER BY created_at DESC[0m
+SQLite3::SQLException: near ")": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id > ) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 31ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ")": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id > ) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/jobs?id_minimo=1" for 172.17.42.1 at 2014-03-26 15:31:26 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"1"}
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id > 1) ORDER BY created_at DESC
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)[0m
+  Rendered jobs/_job.html.erb (106.1ms)
+  Rendered jobs/index.html.erb within layouts/application (123.1ms)
+Completed 200 OK in 187ms (Views: 146.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 15:31:27 +0000
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 15:31:27 +0000
+Served asset /application.css - 304 Not Modified (130ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 15:31:27 +0000
+Served asset /hello.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 15:31:27 +0000
+Served asset /jobs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 15:31:28 +0000
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/jobs?id_minimo=1%20or%20company_id%20=%204" for 172.17.42.1 at 2014-03-26 15:32:01 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"1 or company_id = 4"}
+  [1m[35mJob Load (0.4ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id > 1 or company_id = 4) ORDER BY created_at DESC
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)[0m
+  Rendered jobs/_job.html.erb (2.0ms)
+  Rendered jobs/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 15:32:01 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 15:32:01 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 15:32:01 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 15:32:01 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 15:32:01 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs?id_minimo=1%27%20or%20company_id%20=%204" for 172.17.42.1 at 2014-03-26 15:32:41 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"1' or company_id = 4"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id > 1' or company_id = 4) ORDER BY created_at DESC
+SQLite3::SQLException: unrecognized token: "' or company_id = 4) ORDER BY created_at DESC": SELECT "jobs".* FROM "jobs"  WHERE (id > 1' or company_id = 4) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: unrecognized token: "' or company_id = 4) ORDER BY created_at DESC": SELECT "jobs".* FROM "jobs"  WHERE (id > 1' or company_id = 4) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/jobs?id_minimo=1%20or%20company_id%20=%204" for 172.17.42.1 at 2014-03-26 15:32:53 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"1 or company_id = 4"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > 1 or company_id = 4) ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+  Rendered jobs/_job.html.erb (2.0ms)
+  Rendered jobs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 15:32:53 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 15:32:53 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 15:32:53 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 15:32:53 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 15:32:53 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs?id_minimo=1%20or%20company_id%20%3E1" for 172.17.42.1 at 2014-03-26 15:33:04 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"1 or company_id >1"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > 1 or company_id >1) ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+  Rendered jobs/_job.html.erb (1.9ms)
+  Rendered jobs/index.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 15:33:05 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 15:33:05 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 15:33:05 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 15:33:05 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 15:33:05 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 172.17.42.1 at 2014-03-26 15:33:12 +0000
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > ) ORDER BY created_at DESC[0m
+SQLite3::SQLException: near ")": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id > ) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ")": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id > ) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+
+
+Started GET "/jobs?id_minimo=1%20or%20company_id%3E1" for 172.17.42.1 at 2014-03-26 15:33:58 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"1 or company_id>1"}
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id > 1 or company_id>1) ORDER BY created_at DESC
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)[0m
+  Rendered jobs/_job.html.erb (2.0ms)
+  Rendered jobs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 15:33:58 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 15:33:58 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 15:33:58 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 15:33:59 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 15:33:59 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs?id_minimo=1%20or%20company_id%3E10" for 172.17.42.1 at 2014-03-26 15:34:02 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"1 or company_id>10"}
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id > 1 or company_id>10) ORDER BY created_at DESC
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)[0m
+  Rendered jobs/_job.html.erb (1.8ms)
+  Rendered jobs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:02 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:02 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:02 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:04 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 15:34:04 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs?id_minimo=%20or%20company_id%3E10" for 172.17.42.1 at 2014-03-26 15:34:12 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>" or company_id>10"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id > or company_id>10) ORDER BY created_at DESC
+SQLite3::SQLException: near "or": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id >  or company_id>10) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "or": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id >  or company_id>10) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/jobs?id_minimo=4%20or%20company_id%3E10" for 172.17.42.1 at 2014-03-26 15:34:25 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"4 or company_id>10"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > 4 or company_id>10) ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5)
+  Rendered jobs/_job.html.erb (0.7ms)
+  Rendered jobs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:25 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:25 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:28 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:36 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 15:34:36 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs?id_minimo=4%20or%20company_id%3E1" for 172.17.42.1 at 2014-03-26 15:34:44 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"4 or company_id>1"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > 4 or company_id>1) ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5, 4)
+  Rendered jobs/_job.html.erb (1.8ms)
+  Rendered jobs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:45 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:45 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:45 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:45 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 15:34:45 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs?id_minimo=4%20or%20company_id%3E4" for 172.17.42.1 at 2014-03-26 15:34:49 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"4 or company_id>4"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > 4 or company_id>4) ORDER BY created_at DESC[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" IN (5)
+  Rendered jobs/_job.html.erb (1.1ms)
+  Rendered jobs/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:50 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:50 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:50 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 15:34:50 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 15:34:50 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/jobs?id_minimo=4%20--" for 172.17.42.1 at 2014-03-26 15:35:34 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"4 --"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > 4 --) ORDER BY created_at DESC[0m
+SQLite3::SQLException: near "--) ORDER BY created_at DESC": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id > 4 --) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 8ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "--) ORDER BY created_at DESC": syntax error: SELECT "jobs".* FROM "jobs"  WHERE (id > 4 --) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.5ms)
+
+
+Started GET "/jobs?id_minimo=4%27%20AND%201=(SELECT%20COUNT(*)%20FROM%20tabname);%20--" for 172.17.42.1 at 2014-03-26 15:37:19 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"4' AND 1=(SELECT COUNT(*) FROM tabname)", " --"=>nil}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id > 4' AND 1=(SELECT COUNT(*) FROM tabname)) ORDER BY created_at DESC
+SQLite3::SQLException: unrecognized token: "' AND 1=(SELECT COUNT(*) FROM tabname)) ORDER BY created_at DESC": SELECT "jobs".* FROM "jobs"  WHERE (id > 4' AND 1=(SELECT COUNT(*) FROM tabname)) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: unrecognized token: "' AND 1=(SELECT COUNT(*) FROM tabname)) ORDER BY created_at DESC": SELECT "jobs".* FROM "jobs"  WHERE (id > 4' AND 1=(SELECT COUNT(*) FROM tabname)) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.8ms)
+
+
+Started GET "/jobs?id_minimo=4%20AND%201=(SELECT%20COUNT(*)%20FROM%20tabname);%20--" for 172.17.42.1 at 2014-03-26 15:37:25 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"4 AND 1=(SELECT COUNT(*) FROM tabname)", " --"=>nil}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE (id > 4 AND 1=(SELECT COUNT(*) FROM tabname)) ORDER BY created_at DESC[0m
+SQLite3::SQLException: no such table: tabname: SELECT "jobs".* FROM "jobs"  WHERE (id > 4 AND 1=(SELECT COUNT(*) FROM tabname)) ORDER BY created_at DESC
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: tabname: SELECT "jobs".* FROM "jobs"  WHERE (id > 4 AND 1=(SELECT COUNT(*) FROM tabname)) ORDER BY created_at DESC):
+  app/controllers/jobs_controller.rb:7:in `index'
+
+
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/codio/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/jobs?id_minimo=4%20AND%20id=1" for 172.17.42.1 at 2014-03-26 15:49:53 +0000
+Processing by JobsController#index as HTML
+  Parameters: {"id_minimo"=>"4 AND id=1"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE (id > 4 AND id=1) ORDER BY created_at DESC
+  Rendered collection (0.0ms)
+  Rendered jobs/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 172.17.42.1 at 2014-03-26 15:49:54 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 172.17.42.1 at 2014-03-26 15:49:54 +0000
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.17.42.1 at 2014-03-26 15:49:54 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hello.css?body=1" for 172.17.42.1 at 2014-03-26 15:49:54 +0000
+Served asset /hello.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.17.42.1 at 2014-03-26 15:49:55 +0000
+Served asset /application.js - 304 Not Modified (0ms)

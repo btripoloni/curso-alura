@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :set_locale
+  
+  rescue_from SlugError, :with => :rescue_from_slug_error
 
   private
   def current_company
@@ -17,5 +19,9 @@ class ApplicationController < ActionController::Base
         I18n.locale = locale
         cookies[:locale] = {value: locale, expire: 30.days.from_now}
     end
+  end
+
+  def rescue_from_slug_error(exeption)
+    redirect_to exeption.objeto
   end
 end
