@@ -4,7 +4,7 @@ class JobsController < ApplicationController
   # GET /jobs.json
   def index
     @id_minimo = params[:id_minimo]
-    id @id_minimo
+    if @id_minimo
       lista_parcial = Job.where("id > ?", @id_minimo)
     else
       lista_parcial = Job
